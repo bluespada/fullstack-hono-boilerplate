@@ -1,0 +1,28 @@
+{
+    "name": "fullstack-hono-boilerplate",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "db:migrate": "drizzle-kit migrate",
+        "dev": "bun --watch src/index.ts",
+        "start": "bun src/index.ts"
+    },
+    "author": "bluespada <pentingmain@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@electric-sql/pglite": "^0.1.5",
+        "@libsql/client": "^0.6.2",
+        "drizzle-orm": "^0.31.0",
+        "hono": "^4.4.2",
+        "mysql2": "^3.10.0",
+        "pino": "^9.1.0",
+        "pino-pretty": "^11.1.0"
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "drizzle-kit": "^0.22.1",
+        "typescript": "^5.4.5"
+    }
+}
